@@ -91,7 +91,7 @@ body {
   height: 100%;
 } */
 
-*/ html {
+*html {
   box-sizing: border-box;
 }
 
@@ -166,6 +166,40 @@ p {
 
 .header-background {
   background: linear-gradient(to right, var(--purple), #f50179);
+}
+
+.buttonPurple {
+  padding: 1rem 2rem;
+  background-color: var(--purple);
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
+.buttonPurple:hover {
+  background-color: #4c008f;
+}
+
+.buttonWhite {
+  background-color: var(--white);
+  color: var(--purple);
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 1px grey;
+}
+
+.buttonWhite:hover {
+  background-color: var(--white);
+  color: var(--purple);
+  border: solid 1px var(--purple);
+  text-decoration: underline;
+}
+
+a {
+  color: var(--darkGrey);
+}
+
+a:hover {
+  color: var(--purple);
 }
 
 @media only screen and (min-width: 768px) {

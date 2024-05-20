@@ -1,0 +1,15 @@
+.buttonPurple {
+  padding: 1rem 2rem;
+  background-color: var(--purple);
+  border: solid 1px white;
+  border-radius: 5px;
+
+}
+
+.buttonPurple:hover {
+  background-color: #4c008f;
+}
+
+.buttonPurple:active {
+  background-color: #4c008f;
+}
