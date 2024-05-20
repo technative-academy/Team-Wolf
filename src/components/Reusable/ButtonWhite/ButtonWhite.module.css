@@ -1,0 +1,14 @@
+.buttonWhite {
+  background-color: var(--white);
+  color: var(--purple);
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 1px grey;
+}
+
+.buttonWhite:hover {
+  background-color: var(--white);
+  color: var(--purple);
+  border: solid 1px var(--purple);
+  text-decoration: underline;
+}
