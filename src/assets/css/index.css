@@ -115,3 +115,99 @@ body {
 #root {
   height: 100%;
 }
+
+:root {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --black: #1b1c22;
+  --darkGrey: #7d7d7d;
+  --midGrey: #e7e7e7;
+  --lightGrey: #f9f9f9;
+  --white: #ffffff;
+  --purple: #8900ff;
+  --headerGradient: #8900ff -> #f50179;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header-background {
+  background: linear-gradient(to right, var(--purple), #f50179);
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
