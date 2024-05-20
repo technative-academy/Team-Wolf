@@ -1,0 +1,9 @@
+.wrapper {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: grey;
+}
