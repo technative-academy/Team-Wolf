@@ -1,0 +1,25 @@
+.wrapper {
+	padding: 1rem;
+	border: 1px solid lightgray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: lightgrey;
+  }
+  
+  .links {
+	display: flex;
+  }
+  
+  .activeLink,
+  .inactiveLink {
+	padding: 0 2rem;
+  }
+  
+  .activeLink {
+	color: #000;
+  }
+  
+  .inactiveLink {
+	  color: #666;
+  }
