@@ -43,4 +43,9 @@ img {
     box-shadow: 2px 2px 20px var(--darkGrey);
     border-radius: 20px;
   }
+
+  img {
+    max-width: 50%;
+    max-height: auto;
+  }
 }
