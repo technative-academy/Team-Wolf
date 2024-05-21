@@ -4,11 +4,10 @@ A repo for Chloe, kamila and Helder's 2st group project.
 
 ## Table of Contents
 
-- [Ai Cooking Assistant](#milliways_restaurant)
-
+- [Ai Cooking Assistant]()
   - [Description](#description)
   - [View Project](#view-project)
-  - [Demo](#demo)
+  - [Our Journey](#our-journey)
   - [Installation](#installation)
   - [Usage](#usage)
     - [As a user](#as-a-user)
@@ -24,7 +23,27 @@ A repo for Chloe, kamila and Helder's 2st group project.
 
 ## View Project
 
-## Demo
+## Our Journey
+
+<details>
+<summary>Day 1</summary>
+</details>
+
+<details>
+<summary>Day 2</summary>
+</details>
+
+<details>
+<summary>Day 3</summary>
+</details>
+
+<details>
+<summary>Day 4</summary>
+</details>
+
+<details>
+<summary>Day 5</summary>
+</details>
 
 ## Installation
 
@@ -50,8 +69,7 @@ A repo for Chloe, kamila and Helder's 2st group project.
 
   None
 
-  ## Questions
+## Questions
 
   Please reach out to us if you have any questions.
   Also, feel free to view this project at []()
-
