@@ -1,97 +1,4 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* html,
-body {
-  height: 100%;
-} */
-
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: Helvetica, sans-serif;
-} */
-
-/* #root {
-  height: 100%;
-} */
-
-*/ html {
+*html {
   box-sizing: border-box;
 }
 
@@ -114,4 +21,93 @@ body {
 
 #root {
   height: 100%;
+}
+
+:root {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Typography variables */
+  /* Use variable name as value to 'font' {font: var(--p-desktop);} attribute */
+  --h1-desktop: 56px/64px "Roboto", sans-serif;
+  --h1-tablet: 40px/48px "Roboto", sans-serif;
+  --h1-mobile: 32px/40px "Roboto", sans-serif;
+
+  --h2-desktop: 32px/40px "Roboto", sans-serif;
+  --h2-tablet: 32px/40px "Roboto", sans-serif;
+  --h2-mobile: 32px/40px "Roboto", sans-serif;
+
+  --h3-desktop: 24px/36px "Roboto", sans-serif;
+  --h3-tablet: 24px/36px "Roboto", sans-serif;
+  --h3-mobile: 18px/24px "Roboto", sans-serif;
+
+  --h4-desktop: 20px/28px "Roboto", sans-serif;
+  --h4-tablet: 20px/28px "Roboto", sans-serif;
+  --h4-mobile: 16px/24px "Roboto", sans-serif;
+
+  --p-desktop: 16px/24px "Roboto", sans-serif;
+  --p-tablet: 16px/24px "Roboto", sans-serif;
+  --p-mobile: 14px/20px "Roboto", sans-serif;
+
+  /* Colour variables */
+  --black: #1b1c22;
+  --darkGrey: #7d7d7d;
+  --midGrey: #e7e7e7;
+  --lightGrey: #f9f9f9;
+  --white: #ffffff;
+  --purple: #8900ff;
+  --headerGradient: #8900ff -> #f50179;
+}
+
+.header-background {
+  background: linear-gradient(to right, var(--purple), #f50179);
+}
+
+.buttonPurple {
+  padding: 1rem 2rem;
+  background-color: var(--purple);
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
+.buttonPurple:hover {
+  background-color: #4c008f;
+}
+
+.buttonWhite {
+  background-color: var(--white);
+  color: var(--purple);
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 1px grey;
+}
+
+.buttonWhite:hover {
+  background-color: var(--white);
+  color: var(--purple);
+  border: solid 1px var(--purple);
+  text-decoration: underline;
+}
+
+a {
+  color: var(--darkGrey);
+}
+
+a:hover {
+  color: var(--purple);
+}
+
+.shadow {
+  background-color: white;
+  box-shadow: 2px 2px 20px var(--darkGrey);
 }
