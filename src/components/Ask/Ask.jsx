@@ -18,7 +18,7 @@ function Ask() {
   // If charNum is below 0 then button will be disabled
   useEffect(() => {
     setIsDisabled(charNum < 0);
-  }, [charNum])
+  }, [charNum]);
 
   // Retrieve the info from result
   const info = result.map((item) => {
