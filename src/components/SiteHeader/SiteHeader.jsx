@@ -13,8 +13,10 @@ function SiteHeader() {
         return "Ask AI Cooking Assistant";
       case "/about":
         return "About AI Cooking Assistant";
+      case "/products":
+        return "Check out our Products";
       default:
-        return "Hi";
+        return "Hi, here is your AI Cooking Assistant";
     }
   };
   return (
