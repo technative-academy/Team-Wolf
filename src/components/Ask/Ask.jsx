@@ -39,7 +39,7 @@ function Ask() {
 
   return (
     <div className={styles.wrapper}>
-      <Input input={input} setInput={setInput} placeholder="Ask.." />
+      <Input input={input} setInput={setInput} placeholder="Give me recipe ideas..." />
       <p className={charNum < 0 ? styles.red : ""}>
         {charNum === 1 || charNum === -1
           ? `${charNum} Character remaining`
