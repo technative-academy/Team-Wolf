@@ -103,9 +103,9 @@ a {
   color: var(--darkGrey);
 }
 
-a:hover {
+/* a:hover {
   color: var(--purple);
-}
+} */
 
 .shadow {
   background-color: white;

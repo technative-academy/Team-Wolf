@@ -1,9 +1,21 @@
 .wrapper {
   padding: 2rem;
 
+  height: 35vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   background: linear-gradient(to right, #8900ff, #f50179);
+}
+
+.mainHeading {
+  text-align: center;
+}
+
+.subheading {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 100;
 }
