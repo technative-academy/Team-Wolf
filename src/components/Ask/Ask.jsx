@@ -26,9 +26,9 @@ function Ask() {
   });
 
   // handle click for ask new question
-  function newQuestion(){
-    setShow(false)
-    setIsDisabled(false)
+  function newQuestion() {
+    setShow(false);
+    setIsDisabled(false);
     setInput("Give me things to eat for lunch");
   }
 
