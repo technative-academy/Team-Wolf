@@ -10,9 +10,10 @@ import ButtonWhite from "../Reusable/ButtonWhite/ButtonWhite";
 function Ask() {
   const result = useSelector((state) => state.ask.result);
   const dispatch = useDispatch();
-  const [input, setInput] = useState("Give me things to eat for dinner");
+  const [input, setInput] = useState("");
   const [isDisabled, setIsDisabled] = useState(false);
   const [show, setShow] = useState(false);
+  const charNum = 160 - input.length;
 
   // Retrieve the info from result
   const info = result.map((item) => {
@@ -29,12 +30,17 @@ function Ask() {
   function newQuestion() {
     setShow(false);
     setIsDisabled(false);
-    setInput("Give me things to eat for lunch");
+    // setInput("Give me things to eat for lunch");
   }
 
   return (
     <div className={styles.wrapper}>
       <Input input={input} setInput={setInput} placeholder="Ask.." />
+      <p className={charNum < 0 ? styles.red : ""}>
+        {charNum === 1 || charNum === -1
+          ? `${charNum} Character remaining`
+          : `${charNum} Characters remaining`}
+      </p>
       <ButtonPurple
         isDisabled={isDisabled}
         text={"Ask the brains"}
