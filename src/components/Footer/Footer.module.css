@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
+
   padding: 1rem;
   border: 1px solid lightgray;
   color: rgb(147, 144, 144);
