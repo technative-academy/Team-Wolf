@@ -15,17 +15,20 @@ function Ask() {
   const info = result.map((item) => {
     return (
       <Info
-      key={item.title}
-      title={item.title}
-      description={item.description}
+        key={item.title}
+        title={item.title}
+        description={item.description}
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className={styles.wrapper}>
       <Input input={input} setInput={setInput} placeholder="Ask.." />
-      <ButtonPurple text={"Ask the brains"} onClick={() => dispatch(makeAskRequest(input))}/>
+      <ButtonPurple
+        text={"Ask the brains"}
+        onClick={() => dispatch(makeAskRequest(input))}
+      />
       <div>{info}</div>
     </div>
   );

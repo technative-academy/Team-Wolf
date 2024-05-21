@@ -1,17 +1,13 @@
 import styles from "./Input.module.css";
 
-function AskInput({input, setInput, placeholder}) {
-    function handleChange(event) {
-        setInput(event.target.value);
-    }
+function AskInput({ input, setInput, placeholder }) {
+  function handleChange(event) {
+    setInput(event.target.value);
+  }
 
   return (
     <>
-      <input
-        type="text"
-        placeholder={placeholder}
-        onChange={handleChange}
-        />
+      <input type="text" placeholder={placeholder} onChange={handleChange} />
     </>
   );
 }

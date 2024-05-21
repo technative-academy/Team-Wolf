@@ -9,9 +9,9 @@ export const makeAskRequest = createAsyncThunk(
     const response = await fetch(apiURL, {
       headers: { Accept: "application/json" },
     });
-    console.log(response)
+    console.log(response);
     const data = await response.json();
-    console.log(data)
+    console.log(data);
     return data.results;
   }
 );
