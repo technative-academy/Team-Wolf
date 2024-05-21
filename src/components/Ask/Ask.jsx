@@ -25,9 +25,7 @@ function Ask() {
   return (
     <div className={styles.wrapper}>
       <Input input={input} setInput={setInput} placeholder="Ask.." />
-      <ButtonPurple text={"Ask the brains"} onClick={() => dispatch(makeAskRequest())}/>
-      <p>{input}</p>
-      <p>{`Title: ${result[0].title} Description: ${result[0].description}`}</p>
+      <ButtonPurple text={"Ask the brains"} onClick={() => dispatch(makeAskRequest(input))}/>
       <div>{info}</div>
     </div>
   );

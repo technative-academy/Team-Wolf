@@ -3,8 +3,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // Thunk
 export const makeAskRequest = createAsyncThunk(
   "ask/makeAskRequest",
-  async () => {
-    const params = "what+are+the+best+dinosaurs";
+  async (params) => {
+    //const params = "what+are+the+best+dinosaurs";
     const apiURL = `https://project-2.technative.dev.f90.co.uk/ai/wolf?query=${params}`;
     const response = await fetch(apiURL, {
       headers: { Accept: "application/json" },
