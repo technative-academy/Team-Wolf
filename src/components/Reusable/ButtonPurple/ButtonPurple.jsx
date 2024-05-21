@@ -1,9 +1,9 @@
 import styles from "./ButtonPurple.module.css";
 
-function ButtonPurple() {
+function ButtonPurple({text}) {
   return (
     <div className={styles.wrapper}>
-      <button className={styles.buttonPurple}>This is a Button</button>
+      <button className={styles.buttonPurple}>{text}</button>
     </div>
   );
 }

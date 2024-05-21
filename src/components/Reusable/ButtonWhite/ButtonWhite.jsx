@@ -1,9 +1,9 @@
 import styles from "./ButtonWhite.module.css";
 
-function ButtonWhite() {
+function ButtonWhite({text}) {
   return (
     <div className={styles.wrapper}>
-      <button className={styles.buttonWhite}>This is a Button</button>
+      <button className={styles.buttonWhite}>{text}</button>
     </div>
   );
 }
