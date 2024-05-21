@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { MdDescription } from "react-icons/md";
 
 // Thunk
 export const makeAskRequest = createAsyncThunk(
