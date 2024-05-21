@@ -1,4 +1,5 @@
 .wrapper {
-  background: #f90;
+  color: var(--black);
+  background: var(--white);
   width: 100%;
 }
