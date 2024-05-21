@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Input from "../Reusable/Input/Input";
 import styles from "./Ask.module.css";
 import ButtonPurple from "../Reusable/ButtonPurple/ButtonPurple";
@@ -15,6 +15,11 @@ function Ask() {
   const [show, setShow] = useState(false);
   const charNum = 160 - input.length;
 
+  // If charNum is below 0 then button will be disabled
+  useEffect(() => {
+    setIsDisabled(charNum < 0);
+  }, [charNum])
+
   // Retrieve the info from result
   const info = result.map((item) => {
     return (
@@ -30,7 +35,6 @@ function Ask() {
   function newQuestion() {
     setShow(false);
     setIsDisabled(false);
-    // setInput("Give me things to eat for lunch");
   }
 
   return (
