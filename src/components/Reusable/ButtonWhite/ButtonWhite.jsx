@@ -1,9 +1,11 @@
 import styles from "./ButtonWhite.module.css";
 
-function ButtonWhite({text}) {
+function ButtonWhite({ text, href, onClick, isHidden }) {
   return (
     <div className={styles.wrapper}>
-      <button className={styles.buttonWhite}>{text}</button>
+      <button className={styles.buttonWhite} href={href} onClick={onClick}>
+        {text}
+      </button>
     </div>
   );
 }

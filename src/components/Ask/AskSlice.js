@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { MdDescription } from "react-icons/md";
 
 // Thunk
 export const makeAskRequest = createAsyncThunk(
@@ -31,6 +32,7 @@ const config = {
       .addCase(makeAskRequest.pending, (state) => {
         state.isLoading = true;
         state.error = null;
+        state.result = [{title:"Pending", description:"..."}];
       })
       .addCase(makeAskRequest.fulfilled, (state, action) => {
         state.isLoading = false;
