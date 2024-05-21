@@ -5,7 +5,7 @@ import styles from "./Home.module.css";
 function Home() {
   return (
     <div className={styles.wrapper}>
-      <div className={`${styles.shadow} ${styles.padding}`}>
+      <div className={` ${styles.card} ${styles.shadow} ${styles.padding}`}>
         <h2 className={styles.margin}>We do Recipes</h2>
         <h2 className={`${styles.margin} ${styles.via}`}>(via ChatGPT)</h2>
         <p className={styles.para}>
