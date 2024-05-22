@@ -1,8 +1,8 @@
 import styles from "./ButtonPurple.module.css";
 
-function ButtonPurple({ text, href, onClick, isDisabled }) {
+function ButtonPurple({ text, href, type, onClick, isDisabled }) {
   const button = !isDisabled ? (
-    <button className={styles.buttonPurple} href={href} onClick={onClick}>
+    <button className={styles.buttonPurple} type={type} href={href} onClick={onClick}>
       {text}
     </button>
   ) : (

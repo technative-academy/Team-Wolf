@@ -39,21 +39,29 @@ function Ask() {
 
   return (
     <div className={styles.wrapper}>
-      <Input input={input} setInput={setInput} placeholder="Give me recipe ideas..." />
-      <p className={charNum < 0 ? styles.red : ""}>
-        {charNum === 1 || charNum === -1
-          ? `${charNum} Character remaining`
-          : `${charNum} Characters remaining`}
-      </p>
-      <ButtonPurple
-        isDisabled={isDisabled}
-        text={"Ask the brains"}
-        onClick={() => {
+      <form
+        onSubmit={() => {
           dispatch(makeAskRequest(input));
           setIsDisabled(true);
           setShow(true);
         }}
-      />
+      >
+        <Input
+          input={input}
+          setInput={setInput}
+          placeholder="Give me recipe ideas..."
+        />
+        <p className={charNum < 0 ? styles.red : ""}>
+          {charNum === 1 || charNum === -1
+            ? `${charNum} Character remaining`
+            : `${charNum} Characters remaining`}
+        </p>
+        <ButtonPurple
+          isDisabled={isDisabled}
+          text={"Ask the brains"}
+          type={"submit"}
+        />
+      </form>
       {show && <ButtonWhite text="Ask a new question" onClick={newQuestion} />}
       {show && <div>{info}</div>}
     </div>
