@@ -40,43 +40,45 @@ function Ask() {
 
   return (
     <div className={styles.wrapper}>
-      <h2>Ask your question</h2>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          dispatch(makeAskRequest(input));
-          setIsDisabled(true);
-          setShow(true);
-        }}
-      >
-        <div className={styles.formContentContainer}>
-          <Input
-            input={input}
-            setInput={setInput}
-            placeholder="Give me recipe ideas..."
-          />
-          <ButtonPurple
-            className={styles.askButton}
-            isDisabled={isDisabled}
-            text={"Ask the brains"}
-            type={"submit"}
-          />
-          {show && (
-            <ButtonWhite text="Ask a new question" onClick={newQuestion} />
-          )}
-          <p className={`${charNum < 0 ? styles.red : ""} ${styles.charNum}`}>
-            {charNum === 1 || charNum === -1
-              ? `${charNum} Character remaining`
-              : `${charNum} Characters remaining`}
-          </p>
-        </div>
-      </form>
-      {isLoading && <img src="/images/icons8-loading-circle.gif" />}
-      {show && (
-        <div className={styles.customBorder}>
-          <h2 style={{ textAlign: "left" }}>Results</h2> {info}
-        </div>
-      )}
+      <div className={` ${styles.card} ${styles.shadow} ${styles.padding}`}>
+        <h2>Ask your question</h2>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            dispatch(makeAskRequest(input));
+            setIsDisabled(true);
+            setShow(true);
+          }}
+        >
+          <div className={styles.formContentContainer}>
+            <Input
+              input={input}
+              setInput={setInput}
+              placeholder="Give me recipe ideas..."
+            />
+            <ButtonPurple
+              className={styles.askButton}
+              isDisabled={isDisabled}
+              text={"Ask the brains"}
+              type={"submit"}
+            />
+            {show && (
+              <ButtonWhite text="Ask a new question" onClick={newQuestion} />
+            )}
+            <p className={`${charNum < 0 ? styles.red : ""} ${styles.charNum}`}>
+              {charNum === 1 || charNum === -1
+                ? `${charNum} Character remaining`
+                : `${charNum} Characters remaining`}
+            </p>
+          </div>
+        </form>
+        {isLoading && <img src="/images/icons8-loading-circle.gif" />}
+        {show && (
+          <div className={styles.customBorder}>
+            <h2 style={{ textAlign: "left" }}>Results</h2> {info}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

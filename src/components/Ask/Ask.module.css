@@ -34,3 +34,34 @@ html {
 .formContentContainer {
   margin: 1rem;
 }
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5rem;
+    width: 50%;
+  }
+
+  .padding {
+    padding: 1rem;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shadow {
+    background-color: white;
+    box-shadow: 2px 2px 20px var(--darkGrey);
+    border-radius: 20px;
+  }
+
+  img {
+    max-width: 50%;
+    max-height: auto;
+  }
+}
