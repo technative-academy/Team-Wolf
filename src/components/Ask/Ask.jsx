@@ -54,20 +54,27 @@ function Ask() {
           setInput={setInput}
           placeholder="Give me recipe ideas..."
         />
-        <p className={charNum < 0 ? styles.red : ""}>
-          {charNum === 1 || charNum === -1
-            ? `${charNum} Character remaining`
-            : `${charNum} Characters remaining`}
-        </p>
         <ButtonPurple
+          className={styles.askButton}
           isDisabled={isDisabled}
           text={"Ask the brains"}
           type={"submit"}
         />
+        {show && (
+          <ButtonWhite text="Ask a new question" onClick={newQuestion} />
+        )}
+        <p className={`${charNum < 0 ? styles.red : ""} ${styles.charNum}`}>
+          {charNum === 1 || charNum === -1
+            ? `${charNum} Character remaining`
+            : `${charNum} Characters remaining`}
+        </p>
       </form>
-      {show && <ButtonWhite text="Ask a new question" onClick={newQuestion} />}
       {isLoading && <img src="/images/icons8-loading-circle.gif" />}
-      {show && <div>{info}</div>}
+      {show && (
+        <div className={styles.customBorder}>
+          <h2 style={{ textAlign: "left" }}>Results</h2> {info}
+        </div>
+      )}
     </div>
   );
 }

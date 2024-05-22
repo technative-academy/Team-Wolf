@@ -3,8 +3,19 @@
   background: var(--white);
   width: 100%;
   text-align: center;
+  padding: 1rem
 }
 
 .red {
   color: red;
+}
+
+.charNum {
+  text-align: left;
+}
+
+.customBorder {
+  padding: 2px;
+  background-image: url("/images/customBorder.svg");
+  background-repeat: repeat-x;
 }
