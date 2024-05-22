@@ -7,7 +7,7 @@ function AskInput({ input, setInput, placeholder }) {
 
   return (
     <>
-      <input required type="text" placeholder={placeholder} onChange={handleChange} />
+      <input className={styles.input} required type="text" placeholder={placeholder} onChange={handleChange} />
     </>
   );
 }

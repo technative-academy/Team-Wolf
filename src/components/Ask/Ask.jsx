@@ -40,6 +40,7 @@ function Ask() {
 
   return (
     <div className={styles.wrapper}>
+      <h2>Ask your question</h2>
       <form
         onSubmit={(e) => {
           e.preventDefault();
