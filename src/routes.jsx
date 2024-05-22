@@ -32,6 +32,7 @@ import About from "./components/About/About";
 import Ask from "./components/Ask/Ask";
 import AboutApp from "./components/AboutTheApp/AboutTheApp";
 import AboutTeam from "./components/AboutTheTeam/AboutTheTeam";
+import Products from "./components/Products/Products";
 
 const routes = [
   {
@@ -59,6 +60,10 @@ const routes = [
             element: <AboutTeam />,
           },
         ],
+      },
+      {
+        path: "products",
+        element: <Products />,
       },
     ],
   },

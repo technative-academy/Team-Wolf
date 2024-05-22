@@ -59,6 +59,9 @@ function SiteNav() {
         <li>
           <Link to="/about">About</Link>
         </li>
+        <li>
+          <Link to="/products">Products</Link>
+        </li>
       </ul>
       <div className={styles.hamburger} onClick={handleClick}>
         {click ? (
