@@ -9,6 +9,7 @@ import ButtonWhite from "../Reusable/ButtonWhite/ButtonWhite";
 
 function Ask() {
   const result = useSelector((state) => state.ask.result);
+  const isLoading = useSelector((state) => state.ask.isLoading);
   const dispatch = useDispatch();
   const [input, setInput] = useState("");
   const [isDisabled, setIsDisabled] = useState(false);
@@ -40,7 +41,8 @@ function Ask() {
   return (
     <div className={styles.wrapper}>
       <form
-        onSubmit={() => {
+        onSubmit={(e) => {
+          e.preventDefault();
           dispatch(makeAskRequest(input));
           setIsDisabled(true);
           setShow(true);
@@ -63,6 +65,7 @@ function Ask() {
         />
       </form>
       {show && <ButtonWhite text="Ask a new question" onClick={newQuestion} />}
+      {isLoading && <img src="/images/icons8-loading-circle.gif" />}
       {show && <div>{info}</div>}
     </div>
   );

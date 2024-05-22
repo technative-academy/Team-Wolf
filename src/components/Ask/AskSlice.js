@@ -28,7 +28,6 @@ const config = {
       .addCase(makeAskRequest.pending, (state) => {
         state.isLoading = true;
         state.error = null;
-        state.result = [{ title: "Pending", description: "..." }];
       })
       .addCase(makeAskRequest.fulfilled, (state, action) => {
         state.isLoading = false;
