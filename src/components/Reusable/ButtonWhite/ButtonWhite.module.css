@@ -1,9 +1,10 @@
 .buttonWhite {
-  padding: 1rem 4rem;
+  padding: 1rem 0rem;
   background-color: var(--white);
   border: solid 1px grey;
   border-radius: 5px;
   color: var(--purple);
+  width: 100%;
 }
 
 .buttonWhite:hover {
