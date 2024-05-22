@@ -11,3 +11,12 @@ button {
   color: #ffd90073;
 }
 
+.star {
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .star {
+    font-size: 40px;
+  }
+}
