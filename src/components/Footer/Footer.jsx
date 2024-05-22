@@ -6,12 +6,6 @@ function Footer() {
     <Link to='#'>
       <p> Terms and Conditions </p>
     </Link>
-
-
-
-
-
-    
     <Link to='#'>
       <p>Cookies</p>
     </Link>
