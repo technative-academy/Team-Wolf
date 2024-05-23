@@ -41,7 +41,7 @@ function Ask() {
   return (
     <div className={styles.wrapper}>
       <div className={` ${styles.card} ${styles.shadow} ${styles.padding}`}>
-        <h2>Ask your question</h2>
+        <h2 className={styles.h2}>Ask your question</h2>
         <form
           onSubmit={(e) => {
             e.preventDefault();

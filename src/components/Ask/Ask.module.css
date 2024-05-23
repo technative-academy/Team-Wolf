@@ -49,7 +49,7 @@ html {
   }
 
   .padding {
-    padding: 1rem;
+    padding: 1rem 3rem;
   }
 
   .shadow {
@@ -79,5 +79,9 @@ html {
   .charNum {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .h2 {
+    text-align: left;
   }
 }
