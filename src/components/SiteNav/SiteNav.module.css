@@ -13,7 +13,6 @@
   border-bottom: 0.5px solid white;
   padding: 0;
   line-height: 35px;
-  
 }
 
 .navMenu li {
@@ -65,10 +64,11 @@ img {
 
     left: 0;
     top: 100px;
-    height: 30%;
+    height: 35%;
     background-color: white;
     box-shadow: 2px 2px 20px var(--darkGrey);
     border-radius: 5%;
+	
   }
 
   .navMenu a {
