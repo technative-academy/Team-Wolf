@@ -69,14 +69,15 @@ html {
   }
 
   .buttonContainer {
-    
+    width: 30%;
   }
 
   .buttonWhiteContainer {
-
+    width: 30%;
   }
 
   .charNum {
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
