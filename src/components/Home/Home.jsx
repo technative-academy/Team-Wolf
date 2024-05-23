@@ -1,8 +1,20 @@
 import ButtonPurple from "../Reusable/ButtonPurple/ButtonPurple";
 import ButtonWhite from "../Reusable/ButtonWhite/ButtonWhite";
 import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  // Go to ask on button press
+  const navigate = useNavigate();
+
+  const goToAsk = () => {
+    navigate("/ask");
+  };
+
+  const goToProducts = () => {
+    navigate("/products");
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={` ${styles.card} ${styles.shadow} ${styles.padding}`}>
@@ -30,14 +42,14 @@ function Home() {
               Post a question about recipes and see some suggestions from our
               specially trained Al
             </p>
-            <ButtonPurple text="Ask our AI!" />
+            <ButtonPurple onClick={() => goToAsk()} text="Ask our AI!" />
           </div>
           <div className={styles.buttonContainer}>
             <p className={styles.para}>
               We make tasty treats! So don't actually make anything yourself,
               buy from us! Please.
             </p>
-            <ButtonWhite text="Visit our Shop" />
+            <ButtonWhite onClick={() => goToProducts()} text="Visit our Shop" />
           </div>
         </div>
       </div>
