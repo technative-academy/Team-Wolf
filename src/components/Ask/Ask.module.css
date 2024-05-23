@@ -64,7 +64,7 @@ html {
     border-radius: 20px;
   }
 
-  img {
+  .img {
     max-width: 50%;
     max-height: auto;
   }

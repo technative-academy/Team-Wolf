@@ -17,7 +17,11 @@ function Home() {
               this paragraph was stolen.
             </p>
           </div>
-          <img src="/images/recipe-book.jpg" alt="image" />
+          <img
+            className={styles.img}
+            src="/images/recipe-book.jpg"
+            alt="image"
+          />
         </div>
 
         <div className={`${styles.buttonsContainer} ${styles.customBorder}`}>
