@@ -15,22 +15,30 @@ function Products() {
   }, [dispatch]);
 
   const [input, setInput] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+
   const baseUrl = "https://project-2.technative.dev.f90.co.uk/";
 
   const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(input.toLowerCase())
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleSearchClick = () => {
+    setSearchTerm(input);
+  };
+
+  console.log(input);
 
   return (
     <div className={styles.wrapper}>
       <div className={` ${styles.card} ${styles.shadow} ${styles.padding}`}>
         <SearchInput input={input} setInput={setInput} />
         {filteredProducts.length === 1 ? (
-          <p>{`${filteredProducts.length} products shown`}</p>
+          <p>{`${filteredProducts.length} Products shown`}</p>
         ) : (
-          <p>{`${filteredProducts.length} products shown`}</p>
+          <p>{`${filteredProducts.length} Products shown`}</p>
         )}
-        <ButtonPurple />
+        <ButtonPurple text="Search" onClick={handleSearchClick} />
         <div className={styles.productCards}>
           {filteredProducts.length === 0 ? (
             <p>No products found</p>
