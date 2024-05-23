@@ -52,12 +52,6 @@ html {
     padding: 1rem;
   }
 
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .shadow {
     background-color: white;
     box-shadow: 2px 2px 20px var(--darkGrey);
@@ -67,5 +61,22 @@ html {
   .img {
     max-width: 50%;
     max-height: auto;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .buttonContainer {
+    
+  }
+
+  .buttonWhiteContainer {
+
+  }
+
+  .charNum {
+    margin-right: 0;
   }
 }
