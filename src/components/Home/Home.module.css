@@ -76,11 +76,12 @@
   .titleContainer {
     display: flex;
     align-items: center;
+    margin-left: 5rem;
   }
 
   .buttonsContainer {
     display: flex;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .buttonContainer {
