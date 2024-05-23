@@ -1,10 +1,11 @@
 .buttonPurple {
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   background-color: var(--purple);
   border: solid 1px white;
   border-radius: 5px;
   margin-bottom: 1rem;
   width: 100%;
+  font: var(--h4-mobile);
 }
 
 .buttonPurple:hover {
@@ -13,4 +14,10 @@
 
 .buttonPurple:active {
   background-color: #4c008f;
+}
+
+@media only screen and (min-width: 1024px) {
+  .buttonPurple {
+    font: var(--h4-desktop);
+  }
 }
