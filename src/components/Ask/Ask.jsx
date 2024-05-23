@@ -72,7 +72,7 @@ function Ask() {
             </p>
           </div>
         </form>
-        {isLoading && <img src="/images/icons8-loading-circle.gif" />}
+        {isLoading && <img className={styles.img} src="/images/icons8-loading-circle.gif" />}
         {show && (
           <div className={styles.customBorder}>
             <h2 style={{ textAlign: "left" }}>Results</h2> {info}

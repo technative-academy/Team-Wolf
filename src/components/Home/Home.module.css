@@ -6,10 +6,13 @@
   padding: 2rem;
 }
 
-img {
+.img {
   max-width: 100%;
-  max-height: auto;
+  height: auto;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .center {
@@ -29,11 +32,18 @@ img {
 }
 
 .buttonContainer {
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .img {
+    max-width: 80%;
+  }
+}
+
+/* Desktop */
 @media only screen and (min-width: 1024px) {
   .wrapper {
     border-radius: 0px;
@@ -43,21 +53,16 @@ img {
     padding: 1rem;
   }
 
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .shadow {
     background-color: white;
     box-shadow: 2px 2px 20px var(--darkGrey);
     border-radius: 20px;
   }
 
-  img {
-    max-width: 50%;
+  .img {
+    max-width: 40%;
     max-height: auto;
+    margin-left: 5rem;
   }
 
   .card {
@@ -65,5 +70,30 @@ img {
     margin-right: 5rem;
     position: relative;
     bottom: 5rem;
+  }
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .buttonContainer {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    text-align: center;
+  }
+
+  .customBorder {
+    padding: 2px;
+    background-image: url("/images/customBorder.svg");
+    background-repeat: repeat-x;
   }
 }
