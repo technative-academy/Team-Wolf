@@ -76,3 +76,70 @@ a {
 a:hover {
   color: var(--purple);
 }
+
+/* Mobile Fonts */
+h1 {
+  font: var(--h1-mobile);
+}
+
+h2 {
+  font: var(--h2-mobile);
+}
+
+h3 {
+  font: var(--h3-mobile);
+}
+
+h4 {
+  font: var(--h4-mobile);
+}
+
+p {
+  font: var(--p-mobile);
+}
+
+/* Tablet Fonts */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font: var(--h1-tablet);
+  }
+
+  h2 {
+    font: var(--h2-tablet);
+  }
+
+  h3 {
+    font: var(--h3-tablet);
+  }
+
+  h4 {
+    font: var(--h4-tablet);
+  }
+
+  p {
+    font: var(--p-tablet);
+  }
+}
+
+/* Desktop Fonts */
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font: var(--h1-desktop);
+  }
+
+  h2 {
+    font: var(--h2-desktop);
+  }
+
+  h3 {
+    font: var(--h3-desktop);
+  }
+
+  h4 {
+    font: var(--h4-desktop);
+  }
+
+  p {
+    font: var(--p-desktop);
+  }
+}
