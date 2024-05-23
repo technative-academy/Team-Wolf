@@ -8,7 +8,7 @@ function Home() {
   const navigate = useNavigate();
 
   const goToAsk = () => {
-    navigate("/ask");
+    navigate("/about/about-app");
   };
 
   const goToProducts = () => {
