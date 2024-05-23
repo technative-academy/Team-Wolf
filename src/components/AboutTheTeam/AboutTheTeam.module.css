@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .imageContainer {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .imageContainer img {
   height: auto;
-  max-width: 100%;
+  max-width: 66%;
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.2), 0 20px 10px rgba(0, 0, 0, 0.2),
     0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -19,20 +20,19 @@
 
 .textContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
-  max-width: 900px;
+  max-width: 90%;
 }
 
 .textColumn {
-  flex: 1;
+  flex: 3;
   margin: 0 10px;
 }
 
 .textColumn p {
   margin-bottom: 20px;
   font-size: 16px;
-  line-height: 1.5;
 }
 
 a {
