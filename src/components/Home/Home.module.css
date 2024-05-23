@@ -9,6 +9,7 @@
 img {
   max-width: 100%;
   max-height: auto;
+  border-radius: 5px;
 }
 
 .center {
@@ -27,7 +28,26 @@ img {
   color: var(--purple);
 }
 
+.buttonContainer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fonts */
+h2 {
+  font: var(--h2-mobile);
+}
+
+p {
+  font: var(--p-mobile);
+}
+
 @media only screen and (min-width: 1024px) {
+  .wrapper {
+    border-radius: 0px;
+  }
+
   .padding {
     padding: 1rem;
   }
@@ -54,5 +74,14 @@ img {
     margin-right: 5rem;
     position: relative;
     bottom: 5rem;
+  }
+
+  /* Fonts */
+  h2 {
+    font: var(--h2-desktop);
+  }
+
+  p {
+    font: var(--p-desktop);
   }
 }

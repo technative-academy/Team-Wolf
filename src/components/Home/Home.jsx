@@ -20,11 +20,15 @@ function Home() {
             Post a question about recipes and see some suggestions from our
             specially trained Al
           </p>
-          <ButtonPurple text="Ask our AI!" />
+          <div className={styles.buttonContainer}>
+            <ButtonPurple text="Ask our AI!" />
+          </div>
           <p className={styles.para}>
             Then don't actually make anything yourself, buy from us!
           </p>
-          <ButtonWhite text="Visit our Shop" />
+          <div className={styles.buttonContainer}>
+            <ButtonWhite text="Visit our Shop" />
+          </div>
         </div>
       </div>
     </div>
