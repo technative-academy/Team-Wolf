@@ -34,15 +34,6 @@ img {
   margin-right: auto;
 }
 
-/* Fonts */
-h2 {
-  font: var(--h2-mobile);
-}
-
-p {
-  font: var(--p-mobile);
-}
-
 @media only screen and (min-width: 1024px) {
   .wrapper {
     border-radius: 0px;
@@ -74,14 +65,5 @@ p {
     margin-right: 5rem;
     position: relative;
     bottom: 5rem;
-  }
-
-  /* Fonts */
-  h2 {
-    font: var(--h2-desktop);
-  }
-
-  p {
-    font: var(--p-desktop);
   }
 }
