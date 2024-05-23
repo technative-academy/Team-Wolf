@@ -27,10 +27,24 @@ A repo for Chloe, kamila and Helder's 2st group project.
 
 <details>
 <summary>Day 1</summary>
+On the 1st day we were given a brief about the project and a figma wireframe with the webapp design. Our task was to create our own  Ai company and use the provided design to create our webapp. So the first day included figuring out how were going to approach the task, where we came to the conclusion that we would split the project into sections and create trello tickets for each task, as shown bellow.
+
+### Trello Board
+![alt text](public/images/trelloBoardDay1.png)
+
+We decided to create a webapp related to the culinary field. we decided to call our company AI Cooking Assistant.
+
+Already on the first day we implemented some of designs.
+
+### Desktop view:
+
+#### Home:
+
 </details>
 
 <details>
 <summary>Day 2</summary>
+On the 2nd day 
 </details>
 
 <details>
