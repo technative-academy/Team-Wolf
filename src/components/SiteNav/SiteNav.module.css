@@ -12,6 +12,7 @@
   transition: transform 0.3s ease;
   border-bottom: 0.5px solid white;
   padding: 0;
+  line-height: 35px;
 }
 
 .navMenu li {
@@ -42,12 +43,13 @@ img {
 }
 
 .logo {
-  height: 7rem; /* Adjust as needed */
-  width: 47rem;
+  max-width: 350px;
+  height: auto;
+  margin-right: 10rem;
 }
 
 /* Hide the menu by default on small screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .header {
     justify-content: space-between;
   }
@@ -62,10 +64,11 @@ img {
 
     left: 0;
     top: 100px;
-    height: 30%;
+    height: 35%;
     background-color: white;
     box-shadow: 2px 2px 20px var(--darkGrey);
     border-radius: 5%;
+	
   }
 
   .navMenu a {
@@ -91,7 +94,16 @@ img {
   }
 
   .logo {
-    height: 5rem; /* Adjust as needed */
-    width: 25rem;
+    max-width: 250px;
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .logo {
+    max-width: 240px;
+    height: auto;
+    margin-right: 0;
   }
 }
