@@ -32,13 +32,28 @@ function Products() {
   return (
     <div className={styles.wrapper}>
       <div className={` ${styles.card} ${styles.shadow} ${styles.padding}`}>
-        <SearchInput input={input} setInput={setInput} />
+        <div className={styles.searchContainer}>
+          <SearchInput
+            className={styles.searchInput}
+            input={input}
+            setInput={setInput}
+          />
+          <ButtonPurple
+            className={styles.searchButton}
+            text="Search"
+            onClick={handleSearchClick}
+          />
+        </div>
         {filteredProducts.length === 1 ? (
-          <p>{`${filteredProducts.length} Products shown`}</p>
+          <p
+            className={styles.productsFound}
+          >{`${filteredProducts.length} Products shown`}</p>
         ) : (
-          <p>{`${filteredProducts.length} Products shown`}</p>
+          <p
+            className={styles.productsFound}
+          >{`${filteredProducts.length} Products shown`}</p>
         )}
-        <ButtonPurple text="Search" onClick={handleSearchClick} />
+
         <div className={styles.productCards}>
           {filteredProducts.length === 0 ? (
             <p>No products found</p>

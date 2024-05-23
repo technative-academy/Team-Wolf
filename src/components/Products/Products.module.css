@@ -77,4 +77,19 @@
     width: auto;
     width: 100%;
   }
+
+  .searchContainer {
+    display: flex;
+    gap: 10px;
+  }
+  .searchInput {
+    flex: 1;
+  }
+  .productsFound {
+    text-align: end;
+  }
+
+  .searchButton {
+    flex: 3;
+  }
 }
