@@ -1,5 +1,10 @@
 .wrapper {
-  padding: 60px;
+  padding: 30px;
+}
+
+p {
+  display: grid;
+  place-items: center;
 }
 
 .iconList {
@@ -7,15 +12,36 @@
   padding: 0;
 }
 .iconList li {
-  margin: 10px 0;
-  padding-left: 25px;
+  margin: 10px 30px;
+  padding: 10px 40px;
   position: relative;
 }
 .iconList li:before {
-  content: "\f00c"; /* Default FontAwesome check icon */
-  font-family: "Font Awesome 5 Free"; /* FontAwesome */
-  font-weight: 900; /* Needed for FontAwesome solid icons */
+  content: "";
+  font-size: 29px;
   position: absolute;
+  margin-right: 100px;
   left: 0;
-  color: #007bff; /* Icon color */
+}
+
+.iconList li:first-child::before {
+  content: "🎂";
+}
+
+.iconList li:nth-child(2)::before {
+  content: "🍔";
+}
+
+.iconList li:nth-child(3)::before {
+  content: "🍕";
+}
+
+.iconList li:nth-child(4)::before {
+  content: "🥦";
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 1px;
+  }
 }
