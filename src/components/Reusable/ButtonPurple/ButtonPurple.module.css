@@ -6,6 +6,7 @@
   margin-bottom: 1rem;
   width: 100%;
   font: var(--h4-mobile);
+  color: var(--white);
 }
 
 .buttonPurple:hover {
