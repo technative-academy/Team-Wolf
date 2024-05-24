@@ -62,7 +62,7 @@
   .img {
     max-width: 40%;
     max-height: auto;
-    margin-left: 5rem;
+    margin: 3rem;
   }
 
   .card {
@@ -80,7 +80,6 @@
 
   .buttonsContainer {
     display: flex;
-    margin-top: 2rem;
   }
 
   .buttonContainer {
