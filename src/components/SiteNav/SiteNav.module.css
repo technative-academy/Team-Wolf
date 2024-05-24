@@ -32,10 +32,10 @@ img {
 
 .navMenu a:hover {
   color: white;
-  text-decoration: none; /* Remove default underline */
-  border-bottom: 3px solid white; /* Add thicker underline (initially transparent) */
-  padding-bottom: 5px; /* Add some padding to make room for the border */
-  transition: border-bottom-color 1s ease; /* Smooth transition for hover effect */
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  transition: border-bottom-color 1s ease;
 }
 
 .hamburger {
@@ -49,6 +49,12 @@ img {
   margin-right: 10rem;
 }
 
+.activeLink {
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  transition: border-bottom-color 0.3s ease;
+}
+
 /* Hide the menu by default on small screens */
 @media (max-width: 800px) {
   .header {
@@ -59,7 +65,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	
+
     background-color: white;
     position: absolute;
     top: 20%;
@@ -96,6 +102,9 @@ img {
     max-width: 250px;
     height: auto;
     margin-right: 0;
+  }
+  .activeLink {
+    color: var(--purple);
   }
 }
 

@@ -1,5 +1,5 @@
 import styles from "./SiteNav.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaHamburger, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
@@ -12,25 +12,33 @@ function SiteNav() {
 
   return (
     <div className={styles.header}>
-      <Link to="/">
+      <NavLink to="/">
         <img className={styles.logo} src="/images/cover.png" alt="Cover" />
-      </Link>
+      </NavLink>
       <ul
         className={
           click ? `${styles.navMenu} ${styles.active}` : styles.navMenu
         }
       >
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" activeClassName={styles.activeLink}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/ask">Ask</Link>
+          <NavLink to="/ask" activeClassName={styles.activeLink}>
+            Ask
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about" activeClassName={styles.activeLink}>
+            About
+          </NavLink>
         </li>
         <li>
-          <Link to="/products">Products</Link>
+          <NavLink to="/products" activeClassName={styles.activeLink}>
+            Products
+          </NavLink>
         </li>
       </ul>
       <div className={styles.hamburger} onClick={handleClick}>
