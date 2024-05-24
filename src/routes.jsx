@@ -5,6 +5,7 @@ import Ask from "./components/Ask/Ask";
 import AboutApp from "./components/AboutTheApp/AboutTheApp";
 import AboutTeam from "./components/AboutTheTeam/AboutTheTeam";
 import Products from "./components/Products/Products";
+import { Navigate } from "react-router-dom";
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
         path: "about",
         element: <About />,
         children: [
+          {
+            path: "",
+            element: <Navigate to="about-app"/>,
+          },
           {
             path: "about-app",
             element: <AboutApp />,
