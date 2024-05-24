@@ -6,14 +6,15 @@
   margin-bottom: 1rem;
   width: 100%;
   font: var(--h4-mobile);
+  color: var(--white);
 }
 
 .buttonPurple:hover {
-  background-color: #4c008f;
+  background-color: #ff930f;
 }
 
 .buttonPurple:active {
-  background-color: #4c008f;
+  background-color: #ff930f;
 }
 
 .buttonPurple:disabled {
