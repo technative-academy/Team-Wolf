@@ -1,6 +1,6 @@
 import styles from "./Input.module.css";
 
-function AskInput({ setInput, placeholder, handleEnter }) {
+function AskInput({ setInput, placeholder}) {
   function handleChange(event) {
     setInput(event.target.value);
   }

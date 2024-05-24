@@ -44,7 +44,7 @@ function Ask() {
         <h2 className={styles.h2}>Ask your question</h2>
         <form
           onSubmit={(e) => {
-            e.preventDefault();
+            e.preventDefault(); {/* Prevent the page from refreshing on submit*/}
             dispatch(makeAskRequest(input));
             setIsDisabled(true);
             setShow(true);
@@ -79,7 +79,7 @@ function Ask() {
           </div>
         </form>
         {isLoading && <img className={styles.img} src="/images/icons8-loading-circle.gif" />}
-        {show && (
+        {show && !isLoading && (
           <div className={styles.customBorder}>
             <h2 style={{ textAlign: "left" }}>Results</h2> {info}
           </div>
