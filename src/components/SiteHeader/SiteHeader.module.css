@@ -19,7 +19,7 @@
   font-weight: 100;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .wrapper {
     padding: 2rem;
     height: 60vh;

@@ -65,9 +65,9 @@ function SiteNav() {
       </ul>
       <div className={styles.hamburger} onClick={handleClick}>
         {click ? (
-          <FaTimes size={50} style={{ color: "white" }} />
+          <FaTimes size={40} style={{ color: "white" }} />
         ) : (
-          <FaHamburger size={50} style={{ color: "white" }} />
+          <FaHamburger size={40} style={{ color: "white" }} />
         )}
       </div>
     </div>
