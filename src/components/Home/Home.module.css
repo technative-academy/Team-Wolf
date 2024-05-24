@@ -36,7 +36,7 @@
   margin-right: auto;
 }
 
-/* Desktop */
+/* Tablet */
 @media only screen and (min-width: 768px) {
   .img {
     max-width: 80%;
@@ -80,6 +80,7 @@
 
   .buttonsContainer {
     display: flex;
+    margin-top: 2rem;
   }
 
   .buttonContainer {
