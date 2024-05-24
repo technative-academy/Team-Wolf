@@ -10,11 +10,11 @@
 }
 
 .buttonPurple:hover {
-  background-color: #4c008f;
+  background-color: #ff930f;
 }
 
 .buttonPurple:active {
-  background-color: #4c008f;
+  background-color: #ff930f;
 }
 
 @media only screen and (min-width: 1024px) {
