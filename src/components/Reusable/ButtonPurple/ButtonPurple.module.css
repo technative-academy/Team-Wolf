@@ -1,5 +1,5 @@
 .buttonPurple {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0.5rem;
   background-color: var(--purple);
   border: solid 1px white;
   border-radius: 5px;
@@ -20,6 +20,12 @@
 .buttonPurple:disabled {
   background-color: #ff8c0086;
   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .buttonPurple {
+    font: var(--h4-tablet);
+  }
 }
 
 @media only screen and (min-width: 1024px) {
