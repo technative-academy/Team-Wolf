@@ -65,6 +65,7 @@
     align-items: center;
     justify-content: center;
   }
+
   .singleCard {
     width: 40%;
     margin: 10px;
@@ -80,8 +81,9 @@
 
   .searchContainer {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-top: 3rem;
+    margin: 3rem 2rem;
   }
   .searchInput {
     flex: 1;
@@ -94,5 +96,9 @@
 
   .searchButton {
     flex: 3;
+  }
+
+  .buttonContainer {
+    width: 40%;
   }
 }
