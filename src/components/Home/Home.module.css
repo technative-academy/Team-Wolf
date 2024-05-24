@@ -36,7 +36,7 @@
   margin-right: auto;
 }
 
-/* Desktop */
+/* Tablet */
 @media only screen and (min-width: 768px) {
   .img {
     max-width: 80%;
@@ -62,7 +62,7 @@
   .img {
     max-width: 40%;
     max-height: auto;
-    margin-left: 5rem;
+    margin: 3rem;
   }
 
   .card {

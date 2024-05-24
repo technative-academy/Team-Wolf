@@ -31,7 +31,7 @@ body {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(to right, #8900ff, #f50179);
+  background: linear-gradient(to right, #ff930f, #f50179);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -67,7 +67,7 @@ body {
   --lightGrey: #f9f9f9;
   --white: #ffffff;
   --purple: #f50179;
-  --headerGradient: #8900ff -> #f50179;
+  --headerGradient: #ff930f -> #f50179;
 }
 
 a {

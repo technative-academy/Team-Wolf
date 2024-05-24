@@ -46,7 +46,7 @@ function Home() {
           </div>
           <div className={styles.buttonContainer}>
             <p className={styles.para}>
-              We make tasty treats! So don't actually make anything yourself,
+              We make very tasty treats! So don't actually make anything yourself,
               buy from us! Please.
             </p>
             <ButtonWhite onClick={() => goToProducts()} text="Visit our Shop" />
