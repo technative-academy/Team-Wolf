@@ -1,5 +1,4 @@
 import styles from "./Root.module.css";
-
 import SiteHeader from "../SiteHeader/SiteHeader";
 import Footer from "../Footer/Footer";
 import MainContent from "../MainContent/MainContent";

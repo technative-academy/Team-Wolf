@@ -1,0 +1,21 @@
+.wrapper {
+  padding: 60px;
+}
+
+.iconList {
+  list-style-type: none;
+  padding: 0;
+}
+.iconList li {
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+.iconList li:before {
+  content: "\f00c"; /* Default FontAwesome check icon */
+  font-family: "Font Awesome 5 Free"; /* FontAwesome */
+  font-weight: 900; /* Needed for FontAwesome solid icons */
+  position: absolute;
+  left: 0;
+  color: #007bff; /* Icon color */
+}
