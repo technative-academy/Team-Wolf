@@ -53,19 +53,16 @@ img {
 @media (max-width: 800px) {
   .header {
     justify-content: space-between;
-    margin-top: 3rem;
   }
   .navMenu {
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+	
     background-color: white;
     position: absolute;
-
-    left: 0;
-    top: 100px;
+    top: 20%;
     height: 35%;
     background-color: white;
     box-shadow: 2px 2px 20px var(--darkGrey);
@@ -86,8 +83,9 @@ img {
 
   .navMenu.active {
     display: flex;
-    left: 0;
+    left: 20px;
     color: gray;
+    right: 30px;
   }
 
   .hamburger {
