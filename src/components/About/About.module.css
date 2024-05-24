@@ -33,10 +33,11 @@ a {
   }
 
   .card {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     bottom: 5rem;
+    width: 80%;
   }
   .shadow {
     background-color: white;
