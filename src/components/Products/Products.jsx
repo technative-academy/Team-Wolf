@@ -38,11 +38,12 @@ function Products() {
             input={input}
             setInput={setInput}
           />
-          <ButtonPurple
-            className={styles.searchButton}
-            text="Search"
-            onClick={handleSearchClick}
-          />
+          <div className={styles.buttonContainer}>
+            <ButtonPurple
+              text="Search"
+              onClick={handleSearchClick}
+            />
+          </div>
         </div>
         {filteredProducts.length === 1 ? (
           <p
