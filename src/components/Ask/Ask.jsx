@@ -36,7 +36,6 @@ function Ask() {
   function newQuestion() {
     setShow(false);
     setIsDisabled(false);
-    setInput("");
   }
 
   return (
