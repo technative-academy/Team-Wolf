@@ -77,7 +77,7 @@ function Ask() {
                 <ButtonPurple
                   className={styles.askButton}
                   isDisabled={isDisabled}
-                  text={"Ask the AI Cooking Assistant"}
+                  text={"Ask the Assistant"}
                   type={"submit"}
                 />
               </div>
