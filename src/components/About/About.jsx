@@ -3,6 +3,8 @@ import { useState } from "react";
 import styles from "./About.module.css";
 import AboutApp from "../AboutTheApp/AboutTheApp";
 
+import { NavLink } from "react-router-dom";
+
 function About() {
   const [activeLink, setActiveLink] = useState("about-app");
 
@@ -29,8 +31,6 @@ function About() {
             About the Team
           </NavLink>
         </div>
-
-        {activeLink === "about-app" && <AboutApp />}
 
         <Outlet />
       </div>
