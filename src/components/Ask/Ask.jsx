@@ -41,10 +41,10 @@ function Ask() {
   return (
     <div className={styles.wrapper}>
       <div className={` ${styles.card} ${styles.shadow} ${styles.padding}`}>
-        <h2>Ask your question</h2>
+        <h2 className={styles.h2}>Ask your question</h2>
         <form
           onSubmit={(e) => {
-            e.preventDefault();
+            e.preventDefault(); {/* Prevent the page from refreshing on submit*/}
             dispatch(makeAskRequest(input));
             setIsDisabled(true);
             setShow(true);
@@ -56,24 +56,30 @@ function Ask() {
               setInput={setInput}
               placeholder="Give me recipe ideas..."
             />
-            <ButtonPurple
-              className={styles.askButton}
-              isDisabled={isDisabled}
-              text={"Ask AI Cooking Assistant"}
-              type={"submit"}
-            />
-            {show && (
-              <ButtonWhite text="Ask a new question" onClick={newQuestion} />
-            )}
-            <p className={`${charNum < 0 ? styles.red : ""} ${styles.charNum}`}>
-              {charNum === 1 || charNum === -1
-                ? `${charNum} Character remaining`
-                : `${charNum} Characters remaining`}
-            </p>
+            <div className={styles.buttonsContainer}>
+              <p className={`${charNum < 0 ? styles.red : ""} ${styles.charNum}`}>
+                {charNum === 1 || charNum === -1
+                  ? `${charNum} Character remaining`
+                  : `${charNum} Characters remaining`}
+              </p>
+                {show && (
+                  <div className={styles.buttonWhiteContainer}>
+                    <ButtonWhite text="Ask a new question" onClick={newQuestion} />
+                  </div>
+                )}
+              <div className={styles.buttonContainer}>
+                <ButtonPurple
+                  className={styles.askButton}
+                  isDisabled={isDisabled}
+                  text={"Ask the brains"}
+                  type={"submit"}
+                />
+              </div>
+            </div>
           </div>
         </form>
         {isLoading && <img className={styles.img} src="/images/icons8-loading-circle.gif" />}
-        {show && (
+        {show && !isLoading && (
           <div className={styles.customBorder}>
             <h2 style={{ textAlign: "left" }}>Results</h2> {info}
           </div>

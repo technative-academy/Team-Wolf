@@ -17,6 +17,11 @@
   background-color: #ff930f;
 }
 
+.buttonPurple:disabled {
+  background-color: #d9b4fc;
+  color: white;
+}
+
 @media only screen and (min-width: 1024px) {
   .buttonPurple {
     font: var(--h4-desktop);

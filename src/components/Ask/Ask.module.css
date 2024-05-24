@@ -35,6 +35,10 @@ html {
   margin: 1rem;
 }
 
+.buttonWhiteContainer {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (min-width: 1024px) {
   .wrapper {
     border-radius: 0px;
@@ -45,17 +49,11 @@ html {
     margin-right: auto;
     position: relative;
     bottom: 5rem;
-    width: 50%;
+    width: 90%;
   }
 
   .padding {
-    padding: 1rem;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem 3rem;
   }
 
   .shadow {
@@ -67,5 +65,27 @@ html {
   .img {
     max-width: 50%;
     max-height: auto;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .buttonContainer {
+    width: 30%;
+  }
+
+  .buttonWhiteContainer {
+    width: 30%;
+    margin-right: 1rem;
+  }
+
+  .charNum {
+    margin-right: auto;
+  }
+
+  .h2 {
+    text-align: left;
   }
 }
