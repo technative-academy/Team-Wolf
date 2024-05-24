@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function AboutTheTeam() {
   return <div className={styles.wrapper}>
-      <h1>About the Team</h1>
+
       
     <div className={styles.container}>
       <div className={styles.imageContainer}>
@@ -19,9 +19,9 @@ function AboutTheTeam() {
           Our developers are a dynamic and talented group of professionals dedicated to creating high-quality web solutions. Each member brings a unique set of skills and expertise, ranging from front-end development with JavaScript and React to back-end development using Node.js. Our diverse backgrounds and experiences allow us to approach projects with a well-rounded perspective, ensuring that we deliver robust and user-friendly applications tailored to meet our clients' specific needs.
 
           </p>
-          We pride ourselves on our collaborative work environment, where communication and teamwork are paramount. Regular team meetings, code reviews, and pair programming sessions foster a culture of continuous learning and improvement. This collaborative approach not only helps us to tackle complex problems more efficiently but also ensures that our code is clean, maintainable, and scalable.
+         
           <p>
-            
+          We pride ourselves on our collaborative work environment, where communication and teamwork are paramount. Regular team meetings, code reviews, and pair programming sessions foster a culture of continuous learning and improvement. This collaborative approach not only helps us to tackle complex problems more efficiently but also ensures that our code is clean, maintainable, and scalable.
           </p>
         </div>
         <div className={styles.textColumn}>
