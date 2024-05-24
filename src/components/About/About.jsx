@@ -4,8 +4,6 @@ import styles from "./About.module.css";
 import { NavLink } from "react-router-dom";
 import AboutApp from "../AboutTheApp/AboutTheApp";
 
-import { NavLink } from "react-router-dom";
-
 function About() {
   const [activeLink, setActiveLink] = useState("about-app");
 
@@ -33,12 +31,12 @@ function About() {
           </NavLink>
         </div>
 
+        {activeLink === "about-app" && <AboutApp />}
+
         <Outlet />
       </div>
     </div>
   );
 }
-
-
 
 export default About;
