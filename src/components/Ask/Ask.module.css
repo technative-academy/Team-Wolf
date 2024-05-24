@@ -35,6 +35,10 @@ html {
   margin: 1rem;
 }
 
+.buttonWhiteContainer {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (min-width: 1024px) {
   .wrapper {
     border-radius: 0px;
