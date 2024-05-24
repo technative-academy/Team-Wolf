@@ -21,8 +21,8 @@
 
 @media only screen and (max-width: 800px) {
   .wrapper {
-    padding: 2rem;
+    padding: 1rem;
     height: 60vh;
-    padding: 3rem;
+	
   }
 }
