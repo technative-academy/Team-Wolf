@@ -57,28 +57,35 @@ function Ask() {
               placeholder="Give me recipe ideas..."
             />
             <div className={styles.buttonsContainer}>
-              <p className={`${charNum < 0 ? styles.red : ""} ${styles.charNum}`}>
+              <p
+                className={`${charNum < 0 ? styles.red : ""} ${styles.charNum}`}
+              >
                 {charNum === 1 || charNum === -1
                   ? `${charNum} Character remaining`
                   : `${charNum} Characters remaining`}
               </p>
-                {show && (
-                  <div className={styles.buttonWhiteContainer}>
-                    <ButtonWhite text="Ask a new question" onClick={newQuestion} />
-                  </div>
-                )}
+              {show && (
+                <div className={styles.buttonWhiteContainer}>
+                  <ButtonWhite
+                    text="Ask a new question"
+                    onClick={newQuestion}
+                  />
+                </div>
+              )}
               <div className={styles.buttonContainer}>
                 <ButtonPurple
                   className={styles.askButton}
                   isDisabled={isDisabled}
-                  text={"Ask the AI Cooking Assistant"}
+                  text={"Ask the Assistant"}
                   type={"submit"}
                 />
               </div>
             </div>
           </div>
         </form>
-        {isLoading && <img className={styles.img} src="/images/icons8-loading-circle.gif" />}
+        {isLoading && (
+          <img className={styles.img} src="/images/icons8-loading-circle.gif" />
+        )}
         {show && !isLoading && (
           <div className={styles.customBorder}>
             <h2 style={{ textAlign: "left" }}>Results</h2> {info}

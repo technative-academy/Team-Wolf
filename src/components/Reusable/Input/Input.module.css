@@ -4,18 +4,25 @@
   background-color: var(--lightGrey);
   border-radius: 3px;
   padding-left: 15%;
-  padding-top: 1.9rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   width: 100%;
   height: auto;
-  background-image: url("/images/arrow.png");
+  background-image: url("/images/arrowPink.png");
   background-position: 5% 50%;
   background-repeat: no-repeat;
   background-size: 20px;
   overflow: hidden;
   border: solid 2px var(--white);
+  font: var(--h4-mobile);
 }
 
 .input:focus {
   border: solid 2px var(--purple);
+}
+
+@media only screen and (min-width: 1024px) {
+  .input {
+    font: var(--h4-desktop);
+  }
 }
