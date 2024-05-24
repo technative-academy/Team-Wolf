@@ -13,12 +13,8 @@
   transition: transform 0.3s ease;
   border-bottom: 0.5px solid white;
   padding: 0;
-  line-height: 35px;
-}
-
-.navMenu li {
-  margin: 0 10px;
-  padding: 0 1rem;
+  /* line-height: 35px; */
+  gap: 5rem;
 }
 
 img {
@@ -68,17 +64,18 @@ img {
 
     background-color: white;
     position: absolute;
-    top: 20%;
-    height: 35%;
+    top: 15%;
+    height: 38%;
     background-color: white;
     box-shadow: 2px 2px 20px var(--darkGrey);
     border-radius: 5%;
+    gap: 0.7rem;
   }
 
   .navMenu a {
     color: black;
     text-decoration: none;
-    line-height: 3.5rem;
+    line-height: 3rem;
   }
 
   .navMenu a:hover {
@@ -91,7 +88,7 @@ img {
     display: flex;
     left: 20px;
     color: gray;
-    right: 30px;
+    right: 20px;
   }
 
   .hamburger {
@@ -114,4 +111,11 @@ img {
     height: auto;
     margin-right: 0;
   }
+}
+
+
+@media (min-width: 460px) and (max-width:764px ) {
+	.navMenu{
+		top:20%
+	}
 }
