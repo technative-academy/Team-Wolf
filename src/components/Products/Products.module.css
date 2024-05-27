@@ -64,17 +64,21 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
   }
 
   .singleCard {
     width: 40%;
     margin: 10px;
     padding: 2rem;
+    background-color: white;
+    box-shadow: 2px 2px 20px var(--darkGrey);
+    border-radius: 20px;
   }
 
   .productImage {
     height: auto;
-    height: 450px;
+    height: 350px;
     width: auto;
     width: 100%;
   }
