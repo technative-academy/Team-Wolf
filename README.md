@@ -8,6 +8,7 @@ A repo for Chloe, kamila and Helder's 2st group project.
   - [Description](#description)
   - [View Project](#view-project)
   - [Our Journey](#our-journey)
+  - [Our Stack](#our-stack)
   - [Installation](#installation)
   - [Usage](#usage)
     - [As a user](#as-a-user)
@@ -27,7 +28,7 @@ Welcome to AI Cooking Assistant – your ultimate culinary assistant! Our app ha
 
 <https://team-wolf.netlify.app/>
 
-## OurStack
+## Our Stack
 
 - React:
 we decided to use React as it is a great choice for this type of web app because: 
