@@ -8,11 +8,12 @@ A repo for Chloe, kamila and Helder's 2st group project.
   - [Description](#description)
   - [View Project](#view-project)
   - [Our Journey](#our-journey)
+  - [Our Stack](#our-stack)
   - [Installation](#installation)
   - [Usage](#usage)
     - [As a user](#as-a-user)
   - [License](#license)
-  - [Contributors](#contributing)
+  - [Contributing](#contributing)
     - [Chloe Page](#chloe-page)
     - [kamila wilczynska](#kamila-wilczynska)
     - [Helder Balbino](#helder-balbino)
@@ -27,30 +28,49 @@ Welcome to AI Cooking Assistant – your ultimate culinary assistant! Our app ha
 
 <https://team-wolf.netlify.app/>
 
+## Our Stack
+
+- React:
+we decided to use React as it is a great choice for this type of web app because: 
+of its because component-based architecture, 
+ease of use.
+- Redux:
+To fetch API  and display products and get the response of AI
+
 ## Our Journey
 
 <details>
 <summary>Day 1</summary>
-On the 1st day we were given a brief about the project and a figma wireframe with the webapp design. Our task was to create our own  Ai company and use the provided design to create our webapp. So the first day included figuring out how were going to approach the task, where we came to the conclusion that we would split the project into sections and create trello tickets for each task, as shown bellow.
+On the 1st day we were given a detailed overview about the project and a figma wireframe with the webapp's design.
+
+Our task was to create our own  Ai company and use the provided design to create our webapp.
+
+So first day included figuring out the name of our app and what it would be about:
+We decided to create a webapp related to the culinary field.
+we decided to call our company AI Cooking Assistant.
+
+Also we discussed how were going to approach the task, where we came to the conclusion that we would split the project into sections and create trello tickets for each task, as shown bellow.
 
 ### Trello Board
+
+
 ![alt text](public/images/readMeImages/trelloBoardDay1.png)
 
-We decided to create a webapp related to the culinary field. we decided to call our company AI Cooking Assistant.
+Already on the first day we implemented some of the amazing designs we had in mind.
 
-Already on the first day we implemented some of designs.
+With a mobile first approach, since we believe most of our users would use our app on the go.
+(Eg busy person could look up a recipe on their way home and buy the ingredients before they get there.)
 
-### Desktop view:
+### Home:
 
-#### Home:
-![alt text](public/images/readMeImages/homeViewDay1.png)
-
-we also created the mobile version of the app.
-
-### mobile view:
+#### mobile view:
 
 ![alt text](public/images/readMeImages/mobileViewDay1.png)
 ![alt text](public/images/readMeImages/mobileViewDay1Menu.png)
+
+### Desktop view:
+
+![alt text](public/images/readMeImages/homeViewDay1.png)
 
 </details>
 
@@ -70,7 +90,7 @@ On the 2nd day we added a our second page that would provide the user with a tex
 <details>
 <summary>Day 3</summary>
 
-On the third day, we added a new page to our app that provides users with information about our app and our team. Additionally, we created a products page to display a variety of dishes, complete with a star ratings system and prices. We also improved the design of the app to make it more user-friendly and visually appealing.
+On the 3rd day, we added a new page to our app that would provide users with information about our app and our team. Additionally, we created a products page to display a variety of dishes, complete with a star ratings system and prices. We also improved the design of the app to make it more user-friendly and visually appealing.
 
 ### Home and Ask page Improved design:
 
@@ -90,10 +110,33 @@ On the third day, we added a new page to our app that provides users with inform
 
 <details>
 <summary>Day 4</summary>
+
+On the fourth day, we aimed to enhance the app’s design even more. So We sought feedback from our design team and friends, generating additional tickets on our Trello board.
+
+![alt text](public/images/readMeImages/day4TrelloBoard.png)
+
 </details>
 
 <details>
 <summary>Day 5</summary>
+
+ on the 5th day we implemented the design changes to our app. Giving us the final product that would be ready to go live.
+
+### Home:
+![alt text](public/images/readMeImages/day5home.png)
+
+### Ask page:
+![alt text](public/images/readMeImages/day5ask.png)
+
+### About App and About Team Pages:
+![alt text](public/images/readMeImages/day5AboutTheApp.png)
+
+![alt text](public/images/readMeImages/day5AboutTheTeam.png)
+
+### Products Page:
+
+![alt text](public/images/readMeImages/day5Products.png)
+
 </details>
 
 ## Installation
@@ -110,7 +153,7 @@ As a user i want to be able to get personalized cooking recipes tailored to my t
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Contributors
+## Contributing
 
 ### [Chloe Page](https://github.com/ChloeSAPage)
 
